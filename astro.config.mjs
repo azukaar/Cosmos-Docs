@@ -11,7 +11,7 @@ export default defineConfig({
 				src: '/src/assets/logo.png',
 				replacesTitles: false,
 			},
-			favicon: '/favicon.svg',
+			favicon: '/favicon.ico',
 			social: {
 				github: 'https://github.com/azukaar/Cosmos-Server',
 			},
