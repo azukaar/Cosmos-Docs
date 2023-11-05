@@ -1,4 +1,7 @@
-# Common Issues and Troubleshooting 
+---
+title: Common Issues and Troubleshooting
+description: Docs for troubleshooting common Issues.
+---
 
 ## Check the logs
 

@@ -1,4 +1,7 @@
-# OpenID
+---
+title: OpenID
+description: Docs for the Cosmos OpenID.
+---
 
 ## Introduction
 
@@ -21,11 +24,11 @@ This guide assumes you have gitea up and running on the subdomain gitea.my-domai
 
 First, visit the OpenID tab, and click create.
 
-![OpenID](screenshots/oid1.png)
+![OpenID](../../../assets/oid1.png)
 
 Then, fill in the form:
 
-![OpenID](screenshots/oid2.png)
+![OpenID](../../../assets/oid2.png)
 
 The infos are:
  
@@ -36,22 +39,22 @@ The infos are:
 
  Press the "Reset Secret" button to generate a secret. Copy the secret somewhere safe, you will need it later.
 
- ![OpenID](screenshots/oid3.png)
+ ![OpenID](../../../assets/oid3.png)
 
  
 ### Step 3: Setup Gitea
 
  Assuming you already created the main Admin account, login and access the admin panel.
 
- ![OpenID](screenshots/gitea1.png)
+ ![OpenID](../../../assets/gitea1.png)
 
  Then, go to the "Authentication Sources" tab
 
- ![OpenID](screenshots/gitea2.png)
+ ![OpenID](../../../assets/gitea2.png)
 
  and fill in the form:
 
-![OpenID](screenshots/gitea5.png)
+![OpenID](../../../assets/gitea5.png)
 
 The infos are:
 
@@ -69,15 +72,15 @@ The infos are:
 
  Open a private navigation window and go to https://gitea.my-domain.com/user/login you will be prompted with the following screen:
 
-![OpenID](screenshots/gitea3.png)
+![OpenID](../../../assets/gitea3.png)
 
 Notice the "Login wth Cosmos" button. Click it and you will be redirected to the Cosmos login page. Enter your Cosmos credentials and then you will see a page asking you to confirm the permissions you are giving to Gitea. Since we are not asking for any special permissions, you can just press "Login" and you will be redirected back to Gitea and logged in.
 
-![OpenID](screenshots/oid6.png)
+![OpenID](../../../assets/oid6.png)
 
 Gitea for the first login will ask you to setup the account associated with your Cosmos account. You can choose to use the same username as your Cosmos account or a different one. You can also choose to use the same email as your Cosmos account or a different one. Once you are done, you will be logged in and you can start using Gitea.
 
-![OpenID](screenshots/gitea4.png)
+![OpenID](../../../assets/gitea4.png)
 
 Don't worry it will only ask on the first login. If you want to change the username or email later, you can do so from the Gitea settings page.
 
@@ -91,11 +94,11 @@ This guide assumes you have minio up and running on the subdomain minio.my-domai
 
 First, visit the OpenID tab, and click create.
 
-![OpenID](screenshots/oid1.png)
+![OpenID](../../../assets/oid1.png)
 
 Then, fill in the form:
 
-![OpenID](screenshots/oid2_minio.png)
+![OpenID](../../../assets/oid2_minio.png)
 
 The infos are:
  
@@ -106,18 +109,18 @@ The infos are:
 
  Press the "Reset Secret" button to generate a secret. Copy the secret somewhere safe, you will need it later.
 
- ![OpenID](screenshots/oid3.png)
+ ![OpenID](../../../assets/oid3.png)
  
 ### Step 3: Setup Minio
 
  Assuming you already created the main Admin account, login and access the admin panel.
  Then, go to the "Identity Providers" tab, and "create configuration"
 
- ![OpenID](screenshots/minio2.png)
+ ![OpenID](../../../assets/minio2.png)
 
  and fill in the form:
 
-![OpenID](screenshots/minio3.png)
+![OpenID](../../../assets/minio3.png)
 
 Be careful! Minio uses a policy system which dictates what a user can do (think of it as a permission table). you have 3 differents modes of functionment to choose from:
 
@@ -158,11 +161,11 @@ Let say that we have a user named "bob" and that we want to grant them write rig
 
 First, head to the policy screen, and click "Create Policy"
 
-![OpenID](screenshots/minio4.png)
+![OpenID](../../../assets/minio4.png)
 
 Then, fill in the form:
 
-![OpenID](screenshots/minio5.png)
+![OpenID](../../../assets/minio5.png)
 
 If you are creating a user policy, type their username in the name field, if you are creating a group policy, type "user" or "admin".
 
@@ -242,11 +245,11 @@ And for full admin rights:
 
 Open a private navigation window and go to https://minio.my-domain.com/minio/login you will be prompted with the following screen:
 
-![OpenID](screenshots/minio6.png)
+![OpenID](../../../assets/minio6.png)
 
 Simply click on login with Cosmos and after login, you will see a screen asking you to confirm the permissions you are giving to Minio. Minio does ask a few things but we only really need to grant it the "email" permission. Everything else is currently ignored by Cosmos.
 
-![OpenID](screenshots/minio7.png)
+![OpenID](../../../assets/minio7.png)
 
 Once you are done, you will be logged in and you can start using Minio.
 
@@ -259,11 +262,11 @@ This guide assumes you have Nextcloud up and running on the subdomain nextcloud.
 
 First, visit the OpenID tab, and click create.
 
-![OpenID](screenshots/oid1.png)
+![OpenID](../../../assets/oid1.png)
 
 Then, fill in the form:
 
-![OpenID](screenshots/oid2_nextcloud.png)
+![OpenID](../../../assets/oid2_nextcloud.png)
 
 The infos are:
  
@@ -274,14 +277,14 @@ The infos are:
 
 Press the "Reset Secret" button to generate a secret. Copy the secret somewhere safe, you will need it later.
 
-![OpenID](screenshots/oid3.png)
+![OpenID](../../../assets/oid3.png)
 
 ### Step 3: Setup Nextcloud
 
 Assuming you already created the main Admin account, login and access the admin panel.
 Go too "Apps" and install the app called "OpenID Connect Login".
 
-![OpenID](screenshots/nc1.png)
+![OpenID](../../../assets/nc1.png)
 
 Then, open your config.php file, in /config/www/nextcloud/config/config.php in your Nextcloud container.
 
@@ -324,12 +327,12 @@ Note that there is a "oidc_login_default_group" which is set to "oidc". This is 
 
 Go to the admin panel, and click on "Groups" then click on "Add group" and type "oidc" in the name field. If you selected another group name, use that instead. If you are using a group you already created before, you can skip this step.
 
-![OpenID](screenshots/nc2.png)
+![OpenID](../../../assets/nc2.png)
 
 ### Try to login
 
 Open a private navigation window and go to https://nextcloud.my-domain.com you will be prompted with the following screen:
 
-![OpenID](screenshots/nc3.png)
+![OpenID](../../../assets/nc3.png)
 
 Simply click on login with Cosmos and after login, you will see a screen asking you to confirm the permissions you are giving to Nextcloud. Nextcloud does ask a few things but they are actually not used in Cosmos so it does not matter what you pick here. simply Login and you will be redirected to Nextcloud logged in.

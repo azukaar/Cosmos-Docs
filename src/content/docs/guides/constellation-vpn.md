@@ -1,4 +1,7 @@
-# Constellation VPN
+---
+title: Constellation VPN
+description: Docs for the Constellation VPN.
+---
 
 ## Introduction
 
@@ -8,7 +11,7 @@ Constellation is a VPN module that allow you to remotely connect to your server.
 
 When going to the Constellation page, you first need to enable the VPN. Once done, you should see this:
 
-![Constellation](screenshots/vpn1.PNG)
+![Constellation](../../../assets/vpn1.PNG)
 
 Here's a breakdown:
 
@@ -27,7 +30,7 @@ Here's a breakdown:
 
 In order to connect to your network, you need to create a device. To do so, click on the "Add Node" button. You should see this:
 
-![Constellation](screenshots/vpn2.png)
+![Constellation](../../../assets/vpn2.png)
 
 
 1. This allows you to choose whether the new device is a lighthouse or not. See the next section for more info about lighthouses. If you select it, you will be able to set the hostname of the lighthouse and whether or not it can relay request (see above).
@@ -65,7 +68,7 @@ Do not use a firewall to isolate the private server completely, as it will block
 
 ## Gateway proxies
 
-Additionally to being a lighthouse, your public server can be used as a gateway to your private assets. Either a secured gateway (within Constellation) or a gateway accepting outside connection. In order to do so, please refer to the [URLs](#urls) section, the part about chaining proxies.
+Additionally to being a lighthouse, your public server can be used as a gateway to your private assets. Either a secured gateway (within Constellation) or a gateway accepting outside connection. In order to do so, please refer to the [URLs](../../guides/urls/#overview) section, the part about chaining proxies.
 
 ## Securing your containers
 

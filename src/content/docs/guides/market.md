@@ -1,4 +1,7 @@
-# Cosmos Market
+---
+title: Cosmos Market
+description: Docs for the marketplace in Cosmos.
+---
 
 The cosmos market is a place for you to find pre-configured cosmos-compose files that you can install on your servers. Most applications can be installed as-is directly from the market. The installation will cater for setting up container (or containers, if it needs a DB for example), networks, volumes, links, and even reverse-proxy routes.
 
@@ -6,11 +9,11 @@ The cosmos market is a place for you to find pre-configured cosmos-compose files
 
 First select the market tab on the left.
 
-![Market Tab](screenshots/market_1.png)
+![Market Tab](../../../assets/market_1.png)
 
 Here you can see the highlighted applications on the top, and the available applications on the bottom. By clicking one application you will be directed toward the application page.
 
-![Market App](screenshots/market_2.png)
+![Market App](../../../assets/market_2.png)
 
 Here on the right you will see details about the application: 
 
@@ -29,13 +32,13 @@ You can easily review what sources Cosmos is using to install the applications
 * The docker hub link will take you to the docker hub page of the application. You can review the dockerfile, the tags, and the docker hub description.
 * The compose file link will take you to the compose file that Cosmos will use to install the application. You can review the compose file and make sure it is safe to use.
 
-More details about cosmos-compose files can be found [here](/doc/7 Cosmos-compose/).
+More details about cosmos-compose files can be found [here](../../guides/cosmos-compose).
 
 ## Install the application
 
 Once you are satisfied with the application, you can click the install button. This will take you to the installation page.
 
-![Market Install](screenshots/market_3.png)
+![Market Install](../../../assets/market_3.png)
 
 This form will allow you to configure the application before installing it. You can change the name, the network, the volumes, the ports, and the environment variables.
 
