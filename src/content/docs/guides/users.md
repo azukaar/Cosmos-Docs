@@ -15,4 +15,4 @@ If you create a new user, it will either send an invite directly to them, or sim
 
 You can also generate password reset links for existing users, in case you haven't setup emails yet.
 
-Finally you can delete a user or reset their 2FA if they lost their device.
+Finally, you can delete a user or reset their 2FA if they lost their device.

@@ -20,8 +20,8 @@ Here's a breakdown:
 3. Output the config used by the VPN, also useful for debugging
 4. Completely destroys your network. If you plan on doing significant work, you can start anew
 5. Enable / Disable the network
-6. This allows this server to relay request. By default Constellation will try to establish P2P connections between different nodes of our Constellation. Sometime, this is not possible, for example if you are behind certain types of NAT. In this case, you can enable this option, and the server will relay the request for you. This will increase latency, but will allow you to connect to your nodes.
-7. Make the server private. By default it is "public": it means that Constellation will assume that the IP/hostname of this server is accessible from the internet. If that's not the case (for example a home server behind CGNAT) then you can enable this option (see later on how to create a public node).
+6. This allows this server to relay request. By default, Constellation will try to establish P2P connections between different nodes of our Constellation. Sometime, this is not possible, for example if you are behind certain types of NAT. In this case, you can enable this option, and the server will relay the request for you. This will increase latency, but will allow you to connect to your nodes.
+7. Make the server private. By default, it is "public": it means that Constellation will assume that the IP/hostname of this server is accessible from the internet. If that's not the case (for example a home server behind CGNAT) then you can enable this option (see later on how to create a public node).
 8. This is the hostname to your network. **Do not forget to add a DNS A entry for it in your domain**
 9. In case this is not your main server (either a public server or just a side server), you can connect it to another Cosmos' Constellation network by uploading the constellation.yml file there
 10. This is the list of nodes/devices in your network. You can add nodes by clicking on the "Add Node" button. You can also remove nodes by clicking on the "Remove" button.
@@ -36,7 +36,7 @@ In order to connect to your network, you need to create a device. To do so, clic
 1. This allows you to choose whether the new device is a lighthouse or not. See the next section for more info about lighthouses. If you select it, you will be able to set the hostname of the lighthouse and whether or not it can relay request (see above).
 2. The owner of the device, useful for permissions and management
 3. The name of the device
-4. The IP of the device. By default it will automatically select the next available IP in the network. You can change it if you want, but make sure it is not already taken.
+4. The IP of the device. By default, it will automatically select the next available IP in the network. You can change it if you want, but make sure it is not already taken.
 5. (Optional) The public key of the device. You probably don't need to change it, but if you want to use a specific key, you can do so. That option was only added because of the Nebula mobile app, which requires a specific key to work.
 
 Once you are done, click on "Add" and your device will be able to connect. You will see a screen with a QR Code and a file to download. You can use either of them to connect to your network.
@@ -50,7 +50,7 @@ In order to connect to your network, you need to download the client. You can do
 
 Constellation uses a P2P protocol to connect to your devices. This means that your devices will try to connect to each other directly. However, this is not always possible. For example, if you are behind a CGNAT, you will not be able to connect to your devices. In this case, you can use a lighthouse. A lighthouse is a device that is publicly accessible, and that will relay the request for you. You can think of it as some kind of "guide" for your requests.
 
-By default the traffic will not go through the lighthouse, but if the direct connection fails, it will relay the traffic, assuming you enabled the relay option.
+By default, the traffic will not go through the lighthouse, but if the direct connection fails, it will relay the traffic, assuming you enabled the relay option.
 
 ## CGNAT and various multi-server setups
 

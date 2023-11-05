@@ -122,7 +122,7 @@ The infos are:
 
 ![OpenID](../../../assets/minio3.png)
 
-Be careful! Minio uses a policy system which dictates what a user can do (think of it as a permission table). you have 3 differents modes of functionment to choose from:
+Be careful! Minio uses a policy system which dictates what a user can do (think of it as a permission table). you have 3 different modes of function to choose from:
 
  * Per group policy: **recommended** if you want to use admin and user groups policy
  * Per user policy: If you want to setup a different policy for each user
@@ -288,7 +288,7 @@ Go too "Apps" and install the app called "OpenID Connect Login".
 
 Then, open your config.php file, in /config/www/nextcloud/config/config.php in your Nextcloud container.
 
-Add the following to the file, insde the array (before the closing parenthesis and semicolon)
+Add the following to the file, inside the array (before the closing parenthesis and semicolon)
 
 ```php
     'overwriteprotocol' => 'https',

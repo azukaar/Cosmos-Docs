@@ -43,9 +43,9 @@ In this step we can setup the HTTPS certificate Cosmos will use. There are multi
 
 * Use Let's Encrypt: This is the recommended method, it will automagically get certificates for you, and renew them automatically. It is the easiest method, and the most secure. There are two caveats, see below.
 
-* Supply My Own: If you already have a certificate, you can simply copy paste them in the Text Box that appear when you choose this method.
+* Supply My Own: If you already have a certificate, you can simply copy and paste them in the Text Box that appear when you choose this method.
 
-* Generate a self-signed certificate: Although it's not as secure, This is very useful to use this option. When you do so, Cosmos will generate all your certificates itself, and renew them as well. It is usefull as you can generate certificates for private networks, IPs, or even localhost.
+* Generate a self-signed certificate: Although it's not as secure, This is very useful to use this option. When you do so, Cosmos will generate all your certificates itself, and renew them as well. It is useful as you can generate certificates for private networks, IPs, or even localhost.
 
 * Use HTTP: This is not recommended, as it will not encrypt your traffic. It is only useful for testing purposes.
 
@@ -59,7 +59,7 @@ If you choose to do Let's Encrypt it is very important to note that:
 
 ![DNS Challenge](../../../assets/setup_6.png)
 
-Small warning about cloudflare DNS, there are a lot of different values but you do not need all of them. You also need to be careful to use an API key in the KEY field OR a token in the TOKEN field. If you exchange them, you will see and error. Refer to the docs for more info.
+Small warning about cloudflare DNS, there are a lot of different values, but you do not need all of them. You also need to be careful to use an API key in the KEY field OR a token in the TOKEN field. If you exchange them, you will see and error. Refer to the docs for more info.
 
 Once you have set up HTTPS (please note that it is only effective after you restart Cosmos), you can continue to the final step!
 

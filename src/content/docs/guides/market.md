@@ -50,8 +50,8 @@ Before clicking install, make sure you are happy with the configured hostname, a
 
 ## Post-installation
 
-After the install is done, your application will be ready to use. Note that some application can provide a few extra step or informations after the install, please make sure you read and follow them carefully!
+After the install is done, your application will be ready to use. Note that some application can provide a few extra step or information after the install, please make sure you read and follow them carefully!
 
 For example a container might ask you to setup something in them, or they might give you the admin password of your application. If you didn't see those, they usually appear in the env var of your container (see the servapp page), so no worry!
 
-Finally Cosmos will ask you to restart if it added any new routes to your reverse-proxy. You can do that by clicking the restart button on the top right of the popup.
+Finally, Cosmos will ask you to restart if it added any new routes to your reverse-proxy. You can do that by clicking the restart button on the top right of the popup.

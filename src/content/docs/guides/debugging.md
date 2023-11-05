@@ -15,7 +15,7 @@ You can also check them from Cosmos directly in the Servapp page (if it is still
 
 ## Change the configs
 
-Everything in Cosmos can be changed from the terminal in case of rescue situation. Simply navigate to your config folder (by default /var/lib/comsos) and open the file cosmos-config.json. You can change any value in there, and restart the container to apply the changes.
+Everything in Cosmos can be changed from the terminal in case of rescue situation. Simply navigate to your config folder (by default /var/lib/cosmos) and open the file cosmos-config.json. You can change any value in there, and restart the container to apply the changes.
 
 ## Issues with the installation of the software
 

@@ -9,17 +9,17 @@ In order to setup the DNS challenge with Cosmos we have 3 steps to follow:
 
  - First, make sure your hostname is your main domain name
  - Second, set "DNS Provider" to your DNS provider key in the config page (see [here](https://go-acme.github.io/lego/dns/) for the list of supported providers)
- - Finally, setup the variables for your DNS provider. Note that you do **not** need to setup LEGO/Certbot manully as it is included, and you do **not** need actual environment variables like with vanilla LEGO, you can simply provide the keys and tokens in the config page form:
+ - Finally, setup the variables for your DNS provider. Note that you do **not** need to setup LEGO/Certbot manually as it is included, and you do **not** need actual environment variables like with vanilla LEGO, you can simply provide the keys and tokens in the config page form:
 
 ![DNS](../../../assets/dns.png)
 
-Small warning about cloudflare DNS, there are a lot of different values but you do not need all of them. You also need to be careful to use an API key in the KEY field OR a token in the TOKEN field. If you exchange them, you will see and error. Refer to the docs for more info.
+Small warning about cloudflare DNS, there are a lot of different values, but you do not need all of them. You also need to be careful to use an API key in the KEY field OR a token in the TOKEN field. If you exchange them, you will see and error. Refer to the docs for more info.
 
 Once setup, it will automatically renew your certificates every 90 days.
 
 For  the DNS Challenge to work, you need to use wildcards certificates, check the box "Wildcard Certificate" and make sure your DNS provider supports it.
 
-**Remember your cosmos hostname needs to be 'mydomain.com"** and not "www.mydomain.com" for example, for the wildcard certificate to work. Cosmos will automatically request "*.mydomain.com" and any additional domains you have setup.
+**Remember your cosmos hostname needs to be "mydomain.com"** and not "www.mydomain.com" for example, for the wildcard certificate to work. Cosmos will automatically request "*.mydomain.com" and any additional domains you have setup.
 
 ## Emails
 
@@ -29,7 +29,7 @@ The setup is simple in the config:
 
 ![Email](../../../assets/email.png)
 
-please note that Gmail will require you to create a [App Password](https://support.google.com/accounts/answer/185833?hl=en) to use SMTP.
+please note that Gmail will require you to create an [App Password](https://support.google.com/accounts/answer/185833?hl=en) to use SMTP.
 
 ## Geo-Blocking
 
@@ -82,11 +82,11 @@ You can set environment variables in the config. This is useful if you want to u
 
 ## SE Linux
 
-If you are using SE Linux, you need to allow the container to access the docker socket. To do so, make sure you run the container as priviliged. See details on the [Index Page](../../guides/setup/#step-1-docker/).
+If you are using SE Linux, you need to allow the container to access the docker socket. To do so, make sure you run the container as privileged. See details on the [Index Page](../../guides/setup/#step-1-docker/).
 
 ## Details about the mounts
 
-* `/var/run/docker.sock:/var/run/docker.sock`: This is the docker socket, it is needed for Cosmos to be able to manage your containers. If do not provide it, Cosmos can work in Proxy-only  mode, but wont be able to manage your containers, as well as disabling multiple other quality of life features.
+* `/var/run/docker.sock:/var/run/docker.sock`: This is the docker socket, it is needed for Cosmos to be able to manage your containers. If you do not provide it, Cosmos can work in Proxy-only  mode, but won't be able to manage your containers, as well as disabling multiple other quality of life features.
 
 * `/var/lib/cosmos:/config`: This is where Cosmos will store its config file. It is recommended to mount it to a folder on your host, so you can easily backup your config file. If you do not provide it, Cosmos will use a volume instead, which is not easily accessible.
 
@@ -98,6 +98,6 @@ In case you are wondering if providing the docker socket is a security issue, th
 
 * Sources are available, and you can check the code yourself.
 
-* While it is NOT a security issue, it still mean that any vulnerabilities would have greater importance. This is why as an actively maintained project, any vulnerabilities discovered would be patched right away.
+* While it is NOT a security issue, it still means that any vulnerabilities would have greater importance. This is why as an actively maintained project, any vulnerabilities discovered would be patched right away.
 
 **While it's impossible to claim absolute zero risk, the security benefits of running Cosmos as supervisor are in any case far greater than any hypothetical risk.**

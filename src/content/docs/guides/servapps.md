@@ -53,17 +53,17 @@ Servapps can have different status based on Docker status:
 * **Paused**: The container is paused
 * **Exited**: The container has exited
 
-You can act on thos using the buttons below the name of the servapp (section 2). This includes pausing, restarting and stopping the container.
+You can act on those using the buttons below the name of the servapp (section 2). This includes pausing, restarting and stopping the container.
 
 You can also **Recreate** the container: This means that the container is first going to be completely stopped, and then restarted. This is useful if you want to apply changes to the container, or if you want to force a restart. 
 
-The **Kill** button will completely shutdown the container immediatly, without waiting for it to stop gracefully. This is useful if the container is blocked.
+The **Kill** button will completely shutdown the container immediately, without waiting for it to stop gracefully. This is useful if the container is blocked.
 
 ## Servapp Details
 
 ### Overview
 
-This screen mostly repeats the same informations and has the same functionalities as the servapp list.
+This screen mostly repeats the same information and has the same functionalities as the servapp list.
 
 ### Logs
 
@@ -84,7 +84,7 @@ Note that in order to attach to the main process your container needs two things
 
 ### Docker
 
-This allow you to edit the details of the container. You can change image used, the restart policy, the environment variables, and the labels.
+This allows you to edit the details of the container. You can change image used, the restart policy, the environment variables, and the labels.
 
 * **Image**: The docker image used for the container. You can change it, but it will only be applied when you recreate the container.
 * **Restart Policy**: The restart policy of the container. You can change it, but it will only be applied when you recreate the container. Possible values are "Always", "Unless Stopped", "On Failure", and "Never". It is recommended to use "Always" or "Unless Stopped" as it will restart the container if it crashes, or if the host is rebooted.
@@ -95,7 +95,7 @@ This allow you to edit the details of the container. You can change image used, 
 
 ### Networks
 
-This allow you to edit the networks the container is connected to. You can add or remove networks, and change the alias of the container on the network. You can also use this screen to expose ports.
+This allows you to edit the networks the container is connected to. You can add or remove networks, and change the alias of the container on the network. You can also use this screen to expose ports.
 
 Please note that it is not recommended to expose any ports unless truly necessary. You should always use the reverse proxy to expose your applications. However, as Cosmos does not (yet) have a TCP reverse proxy, you can use this to expose TCP ports (ex. VNC, RDP, a minecraft server, etc.).
 
@@ -103,7 +103,7 @@ Please note that it is not recommended to expose any ports unless truly necessar
 
 ### Volumes
 
-This allow you to edit the volumes the container is using. You can add or remove volumes, and change the mount point of the volume in the container. There are two types of volumes: **Bind** and **Volume**. Bind volumes are folders on the host that are mounted in the container. Volume volumes are volumes created by Docker. You can read more about volumes [here](https://docs.docker.com/storage/volumes/).
+This allows you to edit the volumes the container is using. You can add or remove volumes, and change the mount point of the volume in the container. There are two types of volumes: **Bind** and **Volume**. Bind volumes are folders on the host that are mounted in the container. Volume volumes are volumes created by Docker. You can read more about volumes [here](https://docs.docker.com/storage/volumes/).
 
 ![Volumes](../../../assets/servapps_6.png)
 
@@ -121,7 +121,7 @@ At the end of the form, you will see the cosmos-compose JSON that will be used t
 
 ![JSON](../../../assets/servapps_9.png)
 
-Once you have review it and you are happy, simply press "create" and Cosmos will report all the logs from the container creation and the interactions with Docker. **It is possible that the container creation failed here**. Comon reasons could be that you have made a mistake in your volume bindings, you have an issue with file permission, or that you tried to expose a port that is already used by another service. Simply review the logs and edit your form before trying again. Eventually, once you succeed, you will see the confirmation screen.
+Once you have review it, and you are happy, simply press "create" and Cosmos will report all the logs from the container creation and the interactions with Docker. **It is possible that the container creation failed here**. Common reasons could be that you have made a mistake in your volume bindings, you have an issue with file permission, or that you tried to expose a port that is already used by another service. Simply review the logs and edit your form before trying again. Eventually, once you succeed, you will see the confirmation screen.
 
 ### Form a Docker-Compose or Cosmos-Compose yml file
 
