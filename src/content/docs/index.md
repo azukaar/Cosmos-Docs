@@ -54,7 +54,7 @@ Cosmos-Server is compatible with AMD64 and ARM64 architectures (both your OS and
 
 ## Other settings
 
-in this command, `-v /:/mnt/host` is optional and allow to manage folders from Cosmos, you can remove it if you don't want it but you will have to create your container's bind folders manually.
+in this command, `-v /:/mnt/host` is optional and allow to manage folders from Cosmos, you can remove it if you don't want it, but you will have to create your container's bind folders manually.
 
 `--privileged` is also optional, but it is required if you use hardening software like AppArmor or SELinux, as they restrict access to the docker socket. It is also required for Constellation to work. If you don't want to use it, you can add the following capabilities: NET_ADMIN for Constellation.
 
@@ -72,7 +72,7 @@ if you are having issues with the installation, please contact us on [Discord](h
 
 ## Your first ServApp
 
-In Cosmos, Servapps are the applications running on your server. In reality they represent Docker containers (or mini virtual machines, for complete isolation). They are the building blocks of your server.
+In Cosmos, Servapps are the applications running on your server. In reality, they represent Docker containers (or mini virtual machines, for complete isolation). They are the building blocks of your server.
 
 You can install them in many ways:
 
@@ -84,7 +84,7 @@ You can install them in many ways:
 
 Once created, the servapp will appear in the servapp tab. You can then click on it to access its settings.
 
-There is a "New +" button in the URL sub-category of your servapps. that's where you can create new URLs for your servapp. Those URLs will allow you to access your servapp through Cosmos' proxy. Click on it, and you will be greated with a mostly pre-configured form. Check that all is fine, and click on "Create URL" to create your URL. After restart, your URL will appear on the home page.
+There is a "New +" button in the URL sub-category of your servapps. that's where you can create new URLs for your servapp. Those URLs will allow you to access your servapp through Cosmos' proxy. Click on it, and you will be greeted with a mostly pre-configured form. Check that all is fine, and click on "Create URL" to create your URL. After restart, your URL will appear on the home page.
 
 ## Licence
 
