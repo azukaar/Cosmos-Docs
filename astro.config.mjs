@@ -27,48 +27,26 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Getting Started',
-					link: '',
+					label: 'Guides',
+					items: [
+						{ label: 'Getting Started', link: '' },
+						{ label: 'First Setup', link: '/guides/setup' },
+						{ label: 'Cosmos Market', link: '/guides/market' },
+						{ label: 'ServApps', link: '/guides/servapps' },
+						{ label: 'URLS', link: '/guides/urls' },
+						{ label: 'Users', link: '/guides/users' },
+						{ label: 'Constellation VPN', link: '/guides/constellation-vpn' },
+						{ label: 'Cosmos-Compose', link: '/guides/cosmos-compose' },
+						{ label: 'OpenID', link: '/guides/openid' },
+						{ label: 'Other Setups', link: '/guides/other-setups' },
+						{ label: 'Common Issues and Troubleshooting', link: '/guides/debugging' },
+					],
 				},
 				{
-					label: 'First Setup',
-					link: '/guides/setup',
-				},
-				{
-					label: 'Cosmos Market',
-					link: '/guides/market',
-				},
-				{
-					label: 'ServApps',
-					link: '/guides/servapps',
-				},
-				{
-					label: 'URLS',
-					link: '/guides/urls',
-				},
-				{
-					label: 'Users',
-					link: '/guides/users',
-				},
-				{
-					label: 'Constellation VPN',
-					link: '/guides/constellation-vpn',
-				},
-				{
-					label: 'Cosmos-Compose',
-					link: '/guides/cosmos-compose',
-				},
-				{
-					label: 'OpenID',
-					link: '/guides/openid',
-				},
-				{
-					label: 'Other Setups',
-					link: '/guides/other-setups',
-				},
-				{
-					label: 'Common Issues and Troubleshooting',
-					link: '/guides/debugging',
+					label: 'Contributing',
+					items: [
+						{ label: 'Translating the wiki', link: 'contributing/translations' },
+					],
 				},
 			],
 		}),
