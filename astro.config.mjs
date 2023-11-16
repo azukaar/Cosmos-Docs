@@ -27,7 +27,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Documentation',
 					items: [
 						{ label: 'Getting Started', link: '' },
 						{ label: 'First Setup', link: '/guides/setup' },
@@ -45,7 +45,7 @@ export default defineConfig({
 				{
 					label: 'Contributing',
 					items: [
-						{ label: 'Translating the wiki', link: 'contributing/translations' },
+						{ label: 'Translating the docs', link: 'contributing/translations' },
 					],
 				},
 			],
