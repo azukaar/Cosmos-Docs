@@ -13,6 +13,8 @@ Installation is simple using Docker:
 docker run -d -p 80:80 -p 443:443 -p 4242:4242/udp --privileged --name cosmos-server -h cosmos-server --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /:/mnt/host -v /var/lib/cosmos:/config azukaar/cosmos-server:latest
 ```
 
+#### DO NOT USE UNRAID TEMPLATES OR PORTAINER STACKS TO INSTALL COSMOS. IT WILL NOT WORK PROPERLY.
+
 if you do not have docker installed, you can first easily install it this way on Linux, or with the [official documentation](https://docs.docker.com/engine/installation/) for windows.
 
 Linux command:
