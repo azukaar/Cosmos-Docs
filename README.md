@@ -15,10 +15,10 @@ The documentation itself can be found at <https://cosmos-cloud.io/doc>.
 
 To get all the dependencies installed, run this command in the terminal:
 
-- `pnpm install`
+- `npm install`
 
 To build and run the docs locally, run this command in the terminal:
 
-- `pnpm dev`
+- `npm run dev`
 
 Running both these commands in the terminal, will install the dependencies required for the docs and run a local environment on your machine.
